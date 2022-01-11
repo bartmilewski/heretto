@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Red+Hat+Mono&display=swap');
+
+@charset "UTF-8";
+
+/* MOLLIE COLOURS */
+
+:root {
+  --mollie-black: #000000; /* PRIMARY BLACK */
+  --mollie-white: #FFFFFF; /* PRIMARY WHITE */
+  --mollie-grey-50: #FBFBFB;  
+  --mollie-grey-100: #F6F6F6; /* BACKGROUND GREY */
+  --mollie-grey-200: #F1F1F1; /* TABLE AND IMAGE BORDERS */
+  --mollie-grey-300: #E6E6E6;
+  --mollie-grey-400: #C3C3C3;
+  --mollie-grey-500: #A5A5A5;
+  --mollie-grey-600: #7C7C7C;
+  --mollie-grey-700: #676767;
+  --mollie-grey-800: #484848;    
+  --mollie-grey-900: #262626;
+  --mollie-blue-50: #F0F4FF;
+  --mollie-blue-100: #CCD9FF;
+  --mollie-blue-200: #99B3FF;
+  --mollie-blue-300: #668CFF;
+  --mollie-blue-400: #3366FF;
+  --mollie-blue-500: #0040FF; /* PRIMARY BLUE -- MAIN BRAND COLOUR */
+  --mollie-blue-600: #0033CC;
+  --mollie-blue-700: #0029A3;
+  --mollie-blue-800: #002185;
+  --mollie-blue-900: #00175C;
+  --mollie-red-50: #FFF0F3;
+  --mollie-red-100: #FFCCD5;
+  --mollie-red-200: #FF8FA3;
+  --mollie-red-300: #FF6B86;
+  --mollie-red-400: #FF4769;
+  --mollie-red-500: #FF244C;
+  --mollie-red-600: #FF002E; /* PRIMARY RED -- ERROR, DANGER */
+  --mollie-red-700: #CC0026;
+  --mollie-red-800: #99001C;
+  --mollie-red-900: #660012;
+  --mollie-yellow-50: #FFFAF0;
+  --mollie-yellow-100: #FFEAB8;
+  --mollie-yellow-200: #FFE099;
+  --mollie-yellow-300: #FFDA85;
+  --mollie-yellow-400: #FFD166;
+  --mollie-yellow-500: #FFC847;
+  --mollie-yellow-600: #FFBE2A; /* PRIMARY YELLOW -- WARNING, NOTE */
+  --mollie-yellow-700: #FFB200;
+  --mollie-yellow-800: #D69600;
+  --mollie-yellow-900: #AD7900;
+  --mollie-green-50: #F3FCF3;
+  --mollie-green-100: #D8F4D7;
+  --mollie-green-200: #B0E9AF;
+  --mollie-green-300: #7DDA7B;
+  --mollie-green-400: #4DCD4B;
+  --mollie-green-500: #32AD30; /* PRIMARY GREEN -- POSITIVE, TIP */
+  --mollie-green-600: #2B9429;
+  --mollie-green-700: #247C22;
+  --mollie-green-800: #1D641C;
+  --mollie-green-900: #154814;
+  --mollie-purple-50: #FBF1FE;
+  --mollie-purple-100: #F0CFFC;
+  --mollie-purple-200: #E1A0F8;
+  --mollie-purple-300: #D270F5;
+  --mollie-purple-400: #C341F1;
+  --mollie-purple-500: #B513EE; /* PRIMARY PURPLE -- ACCENT COLOUR */
+  --mollie-purple-600: #980EC8;
+  --mollie-purple-700: #7B0CA2;
+  --mollie-purple-800: #5E097C;
+  --mollie-purple-900: #410656;
+}
+
+body {
+  background: var(--mollie-white);
+  color: var(--mollie-grey-900);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+/* CONTENT */
+
+.topic.concept.nested0, .topic.task.nested0, .topic.nested0 {
+  margin-left: 2%;
+  margin-right: 10%;
+}
+
+.prereq::before {
+  content: "Before you start";
+  color: var(--mollie-grey-900);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.9em;
+}
+
+/* HEADINGS */
+
+.h1 {
+  font-size: 34px;
+  line-height: 36px;
+  margin-top: 0;
+  margin-bottom: 34px;
+  font-weight: 600;
+}
+
+.h2 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.h3 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.h4 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.h5 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.h6 {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: allcaps;
+}
+
+/* BODY */
+
+.p, .shortdesc, .section, .steps, .ol, .ul {
+  font-weight: 400;
+  line-height: 1.9em;
+}
+
+.p.p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.b, .strong {
+  font-weight: 600;
+}
+
+.xref.j-external-link, .link, .xref, .topicref a {
+  color: var(--mollie-blue-500);
+  text-decoration: none;
+}
+
+.xref.j-external-link:hover, .link:hover, .xref:hover, .topicref a:hover {
+  color: var(--mollie-blue-700);
+}
+
+.ph.codeph {
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 12px;
+    background-color: var(--mollie-grey-100);
+    border: thin solid var(--mollie-grey-400);
+    border-radius: 6px;
+    padding: 2px 5px 3px 5px;
+}
+
+.ph.uicontrol {
+  font-weight: 600;
+}
+
+/* TABLES */
+
+.table {
+  border: thin solid var(--mollie-grey-200);
+  border-spacing: 0px;
+}
+
+.table--title-label, .title caption {
+  visibility: hidden;
+}
+
+.thead {
+  background-color: var(--mollie-grey-100);
+  padding: 10px;
+}
+
+.entry {
+  border: thin solid var(--mollie-grey-200);
+  vertical-align: top;
+  padding: 10px;
+}
+
+/* DISCLAIMERS */
+
+.note__title {
+  font-weight: 600;
+}
+
+.note-info {
+  background-color: var(--mollie-blue-50);
+  border: 1px solid var(--mollie-blue-800);
+  padding: 11px 15px;
+  color: var(--mollie-blue-800);
+  font-size: 13px;
+  line-height: 1.9em;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 3px;
+}
+
+.note-warning {
+  background-color: var(--mollie-yellow-50);
+  border: 1px solid var(--mollie-yellow-900);
+  padding: 11px 15px;
+  color: var(--mollie-yellow-900);
+  font-size: 13px;
+  line-height: 1.9em;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 3px;
+}
+
+.note-tip {
+  background-color: var(--mollie-green-50);
+  border: 1px solid var(--mollie-green-800);
+  padding: 11px 15px;
+  color: var(--mollie-green-800);
+  font-size: 13px;
+  line-height: 1.9em;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 3px;
+}
+
+.note-error {
+  background-color: var(--mollie-red-50);
+  border: 1px solid var(--mollie-red-800);
+  padding: 11px 15px;
+  color: var(--mollie-red-800);
+  font-size: 13px;
+  line-height: 1.9em;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 3px;
+}
+
+/* IMAGES */
+
+.screenshot {
+    border: solid 1px var(--mollie-grey-200);
+    margin: 1%;
+    width: 100%;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.diagram {
+    border: none;
+    margin: 1%;
+    width: 100%;
+}
+
+.paragraph-icon {
+    max-width: 14px;
+    padding: 0px 5px 0px 5px;
+}
