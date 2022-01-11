@@ -163,6 +163,7 @@ body {
 
 .ph.uicontrol {
   font-weight: 600;
+  --mollie-red-600: #FF002E;
 }
 
 /* TABLES */
