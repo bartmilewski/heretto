@@ -262,3 +262,10 @@ body {
     max-width: 14px;
     padding: 0px 5px 0px 5px;
 }
+
+/* DAVID PLAY */
+.stepresult {
+  display: table;
+  margin-bottom: 1em;
+  background-colour: #F5F5F5;
+}
