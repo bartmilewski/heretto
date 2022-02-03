@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Red+Hat+Mono&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Red+Hat+Mono&display=swap'); */
 
-@charset "UTF-8";
+/* @charset "UTF-8"; */
 
 /* MOLLIE COLOURS */
 
@@ -93,12 +93,13 @@ body {
 
 /* HEADINGS */
 
-.h1 {
+h1 {
   font-size: 34px;
   line-height: 36px;
   margin-top: 0;
   margin-bottom: 34px;
   font-weight: 600;
+  color: red; /* test */
 }
 
 .h2 {
