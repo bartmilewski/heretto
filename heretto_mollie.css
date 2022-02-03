@@ -93,7 +93,7 @@ body {
 
 /* HEADINGS */
 
-h1 {
+.title {
   font-size: 34px;
   line-height: 36px;
   margin-top: 0;
